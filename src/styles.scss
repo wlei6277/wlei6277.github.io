@@ -105,6 +105,8 @@ img .hero_img {
     width: 100%;
     position: fixed;
     background-color: #fff;
+    border-bottom: $card_border;
+    box-shadow: $card_shadow;
 
     img {
         padding: 10px;
@@ -133,7 +135,7 @@ img .hero_img {
     padding-top: $nav_height;
 }
 
-.Experience {
+.experience {
     .h2_wrapper {
         @include h2_wrapper;
     }
@@ -145,4 +147,38 @@ img .hero_img {
     .TH {
         @include experience_template;
     }
+}
+
+.education {
+    .h2_wrapper {
+        @include h2_wrapper;
+    }
+    
+    .CA {
+        @include education_template;
+    }
+
+    .USYD {
+        @include education_template;
+    }
+
+    .online {
+        @include education_template;
+        .card_title p {
+            color: $main_font_color;
+            font-size: 2em;
+        }
+    }
+}
+
+.contact {
+    .h2_wrapper {
+        @include h2_wrapper;
+    }
+    
+    .contact_template {
+        @include contact_template;
+    }
+
+
 }

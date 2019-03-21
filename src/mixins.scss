@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 1em;
     margin: $div_section_top_margin $align_margin;
     
     // flex-wrap: wrap;
@@ -33,6 +33,7 @@
     background-color: $card_color;
     border: $card_border;
     margin: $card_margin;
+    box-shadow: $card_shadow;
 
    img {
     max-width: 100%;
@@ -48,8 +49,8 @@
        padding: 0.2em 0;
    }
    p {
-       margin: 0;
-       padding: 0.2em 0;
+    //    margin: 0;
+    //    padding: 0.2em 0;
        
    }
 }
@@ -67,6 +68,7 @@
     background-color: $card_color;
     margin: $card_margin;
     border: $card_border;
+    box-shadow: $card_shadow;
     
     
     h3 {
@@ -102,11 +104,12 @@
     margin: $card_margin;
     border: $card_border;
     padding: $card_padding;
+    box-shadow: $card_shadow;
 
     .card_title {
         display: flex;
         border-bottom: $card_border;
-        justify-content: center;
+        
         margin: 1em 0;
         padding-bottom: 0.3em;
         a {
@@ -115,6 +118,7 @@
         }
         img {
             height: 1.5em;
+            width: auto;
         }
     }
 
@@ -132,8 +136,81 @@
         color: rgb(156, 153, 153);
         p {
             margin-bottom: 0;
-            color: lighten($sub_color, 30%)
+            color: lighten($sub_color, 20%)
         }
         
+    }
+}
+
+@mixin education_template {
+    background-color: $card_color;
+    margin: $card_margin;
+    border: $card_border;
+    padding: $card_padding;
+    box-shadow: $card_shadow;
+
+    .card_title {
+        margin: 0;
+        a {
+            text-decoration: none;
+            color: $main_font_color;
+            font-size: 2em;
+        }
+
+        p {
+            color: $sub_color;
+            margin-top: 0.3em;
+        }
+    }
+    .card_body {
+        margin: 0;
+        ul {
+            padding-inline-start: 2em;
+            font-size: 1.5em;
+            
+        }
+
+        li {
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+@mixin contact_template {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 0;
+    background-color: $card_color;
+    margin: $card_margin;
+    border: $card_border;
+    padding: $card_padding;
+    box-shadow: $card_shadow;
+    text-align: center;
+    flex-wrap: wrap;
+
+    div {
+        margin: 0.3em $align_margin;
+    }
+
+    img {
+        height: $skill_logo_height;
+        width: auto;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #000;
+        display: block;
+        margin: 1em 0;
     }
 }
