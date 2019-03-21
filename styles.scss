@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "variables";
+@import "mixins";
+
+main {
+    background-image: url("../photos/bg.png");
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: $parent_font_size;
+    margin: $standard_margin;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color: $main_font_color;
+    font-size: 2em;
+}
+
+h2 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.5em;
+    margin: 0 $align_margin;
+    padding: 0.3em 0;
+}
+
+h3 {
+    color: $main_font_color;
+    font-size: 2em;
+    margin: 1em $align_margin;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+section div {
+    margin: auto $align_margin;
+}
+
+.about {
+    
+    .h2_wrapper {
+        margin: $full_block_margin;
+        background-color: $main_font_color;
+    }
+
+    h3 {
+        color: $sub_color;
+    }
+
+    .mission {
+        margin: $div_section_top_margin $align_margin;
+        margin-top: 0;
+    }
+    
+    .strengths {
+        @include logo_container();
+    }
+}
+
+.projects  {
+
+    .h2_wrapper {
+        margin: $full_block_margin;
+        background-color: $main_font_color;
+    }
+
+    .project_template {
+        @include project_template;
+    }
+}
+
+.skills {
+    .h2_wrapper{
+        @include h2_wrapper;
+    }
+    .technology_skills {
+        @include skills_template;
+    }
+    .colloboration_skills {
+        @include skills_template;
+    }
+}
+
+div .nav_wrapper{
+    height: 100%;
+}
+
+img .hero_img {
+    height: 50%;
+}
+
+
+#nav_bar {
+    height: $nav_height;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+
+    img {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+    
+    div {
+        flex-grow: 100;
+        align-self: center;
+        justify-content: center;
+        h1 {
+            margin: 0px 10px;
+        }
+        h3 {
+            align-items: flex-start;
+            margin: 0px 10px;
+            font-size: 1em;
+            color: $sub_color;
+        }
+    }
+}
+
+#hero_img {
+    padding-top: $nav_height;
+}
+
+.Experience {
+    .h2_wrapper {
+        @include h2_wrapper;
+    }
+    
+    .TLU {
+        @include experience_template;
+    }
+
+    .TH {
+        @include experience_template;
+    }
+}

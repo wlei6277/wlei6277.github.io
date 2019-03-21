@@ -1,0 +1,139 @@
+@mixin logo_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: $div_section_top_margin $align_margin;
+    
+    // flex-wrap: wrap;
+
+    div {
+        height: 5em;
+    }
+
+    img {
+        height: 3em;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    p {
+        font-size: 0.8em;
+        font-weight: bold;
+        text-align: center;
+        margin: 5px 0 0 0;
+    }
+
+
+}
+
+@mixin project_template{
+   
+    background-color: $card_color;
+    border: $card_border;
+    margin: $card_margin;
+
+   img {
+    max-width: 100%;
+   } 
+
+   div {
+       margin: 0;
+       padding: $card_padding;
+   }
+
+   h3 {
+       margin: 0;
+       padding: 0.2em 0;
+   }
+   p {
+       margin: 0;
+       padding: 0.2em 0;
+       
+   }
+}
+
+@mixin h2_wrapper {
+    margin: $full_block_margin;
+    background-color: $main_font_color;
+}
+
+@mixin skills_template {
+    display: flex;
+    flex-direction: column;
+    padding: $card_padding;
+    flex-grow: 1;
+    background-color: $card_color;
+    margin: $card_margin;
+    border: $card_border;
+    
+    
+    h3 {
+        font-size: 2.5em;
+        border-bottom: $card_border;
+        margin: 1em 0;
+        padding-bottom: 0.3em;
+    }
+    .card_title {
+        margin: 0;
+    }
+
+    .card_body {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        img {
+            height: $skill_logo_height;
+            width: auto;
+        }
+
+        }
+        div .card_body .skill_logo {
+            height: 7em;
+            font-size: 2em;
+        }
+}
+
+@mixin experience_template {
+    background-color: $card_color;
+    margin: $card_margin;
+    border: $card_border;
+    padding: $card_padding;
+
+    .card_title {
+        display: flex;
+        border-bottom: $card_border;
+        justify-content: center;
+        margin: 1em 0;
+        padding-bottom: 0.3em;
+        a {
+            font-size: 2em;
+            color: $main_font_color;
+        }
+        img {
+            height: 1.5em;
+        }
+    }
+
+    .card_body {
+        margin: 0;
+        h3 {
+            color: $sub_color;
+            font-size: 1.8em;
+            margin: auto 0;
+        }
+    }
+    
+    .card_footer {
+        margin: 0;
+        color: rgb(156, 153, 153);
+        p {
+            margin-bottom: 0;
+            color: lighten($sub_color, 30%)
+        }
+        
+    }
+}
