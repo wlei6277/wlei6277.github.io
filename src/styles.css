@@ -29,8 +29,7 @@ h2 {
 h3 {
   color: #008073;
   font-size: 2em;
-  margin: 1em 6%;
-  margin-bottom: 0;
+  margin: 0.3em 6%;
 }
 
 p {
@@ -557,7 +556,14 @@ img .hero_img {
   }
 
   .experience .card_title img {
-    width: 30%;
+    width: 20%;
+  }
+
+  .favourites th {
+    font-size: 1.5em;
+  }
+  .favourites td {
+    font-size: 1.5em;
   }
 }
 
