@@ -260,7 +260,23 @@ img .hero_img {
         left: -30%;
     }
 
-    
-    
+    .about {
+        .strengths {
+            img {
+                height: 3em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .experience {
+        .card_title {
+            img {
+                width: 30%;
+            }
+        }
+    }
 
 }
