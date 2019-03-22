@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 main {
-  background-image: url("../photos/bg.png");
+  background-image: url("assets/bg.png");
 }
 
 body {
@@ -413,19 +413,32 @@ img .hero_img {
   font-size: 1.5em;
   background-color: #fff;
   margin: 15px 6%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-.favourites .table_card table, .favourites .table_card th, .favourites .table_card tr {
   border: 1px solid #c9c6c6;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
 }
 .favourites .table_card table {
   width: 100%;
   table-layout: fixed;
+  border-collapse: collapse;
 }
 .favourites .table_card th {
   height: 3em;
   background-color: #008073;
   color: #fff;
+  border-left: 1px solid #fff;
+}
+.favourites .table_card th .first {
+  color: #000;
+  border-left: none;
+}
+.favourites .table_card .first {
+  border-left: none;
+}
+.favourites .table_card td {
+  font-size: 0.9em;
+  border: 1px solid #c9c6c6;
+  padding: 1em;
 }
 
 .contact .h2_wrapper {
