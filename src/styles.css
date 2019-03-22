@@ -70,10 +70,6 @@ section div {
   padding: 1em;
   margin: 20px 6%;
 }
-.about .strengths div {
-  height: 5em;
-  width: auto;
-}
 .about .strengths img {
   height: 2.5em;
   width: auto;
@@ -138,16 +134,17 @@ section div {
   margin: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   font-size: 1em;
 }
 .skills .technology_skills .card_body p {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .skills .technology_skills .card_body img {
-  height: 5em;
+  height: 4em;
 }
 .skills .technology_skills .card_body div .skill_logo {
   height: 4em;
@@ -175,16 +172,17 @@ section div {
   margin: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   font-size: 1em;
 }
 .skills .colloboration_skills .card_body p {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .skills .colloboration_skills .card_body img {
-  height: 5em;
+  height: 4em;
 }
 .skills .colloboration_skills .card_body div .skill_logo {
   height: 4em;
@@ -549,6 +547,17 @@ img .hero_img {
 
   #nav_bar.pop_out {
     left: -30%;
+  }
+
+  .about .strengths img {
+    height: 3em;
+  }
+  .about .strengths p {
+    font-size: 1em;
+  }
+
+  .experience .card_title img {
+    width: 30%;
   }
 }
 

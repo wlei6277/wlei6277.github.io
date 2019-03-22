@@ -8,13 +8,13 @@
     // flex-wrap: wrap;
 
     div {
-        height: 5em;
-        width: auto;
+        // height: 5em;
+        // width: auto;
     }
 
     img {
         height: 2.5em;
-        width:auto;
+        width: auto;
         margin: 0 auto;
         display: block;
     }
@@ -82,16 +82,17 @@
         margin: 0;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         text-align: center;
         font-size: 1em;
         p {
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
 
         img {
-            height: 5em;
+            height: 4em;
             
         }
         
