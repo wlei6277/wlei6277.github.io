@@ -35,6 +35,7 @@ h3 {
 
 p {
   font-size: 1.5em;
+  margin: 0.5em 0;
 }
 
 section {
@@ -60,8 +61,7 @@ section div {
   color: #795548;
 }
 .about .mission {
-  margin: 20px 6%;
-  margin-top: 0;
+  margin: 0 6%;
 }
 .about .strengths {
   flex-direction: row;
