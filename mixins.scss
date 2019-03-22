@@ -214,3 +214,27 @@
         margin: 1em 0;
     }
 }
+
+@mixin table_template {
+    
+    font-size: 1.5em;
+    background-color: $card_color;
+    margin: $card_margin;
+    box-shadow: $card_shadow;
+    
+    table, th, tr {
+        border: $card_border;
+    }
+
+    table {
+        width: 100%;
+        table-layout: fixed; 
+    }
+
+    th {
+        height: 3em;
+        background-color: $main_font_color;
+        color: #fff;
+    }
+
+}
