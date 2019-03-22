@@ -10,18 +10,18 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 h1 {
   color: #008073;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 h2 {
   color: #fff;
   font-weight: normal;
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0 6%;
   padding: 0.3em 0;
 }
@@ -169,15 +169,11 @@ section div {
   font-size: 2em;
 }
 
-div .nav_wrapper {
-  height: 100%;
-}
-
 img .hero_img {
   height: 50%;
 }
 
-#nav_bar {
+#top_section {
   height: 60px;
   display: flex;
   text-align: center;
@@ -187,21 +183,22 @@ img .hero_img {
   border-bottom: 1px solid #c9c6c6;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-#nav_bar img {
+#top_section img {
   padding: 10px;
   width: 40px;
   height: 40px;
   align-self: center;
 }
-#nav_bar div {
+#top_section div {
   flex-grow: 100;
   align-self: center;
   justify-content: center;
+  display: block;
 }
-#nav_bar div h1 {
+#top_section div h1 {
   margin: 0px 10px;
 }
-#nav_bar div h3 {
+#top_section div h3 {
   align-items: flex-start;
   margin: 0px 10px;
   font-size: 1em;
@@ -418,7 +415,7 @@ img .hero_img {
   text-align: center;
 }
 .favourites .table_card table {
-  width: 100%;
+  max-width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 }
@@ -436,7 +433,7 @@ img .hero_img {
   border-left: none;
 }
 .favourites .table_card td {
-  font-size: 0.9em;
+  font-size: 1.5em;
   border: 1px solid #c9c6c6;
   padding: 1em;
 }
@@ -472,6 +469,42 @@ img .hero_img {
   color: #000;
   display: block;
   margin: 1em 0;
+}
+
+#nav_bar {
+  height: 100%;
+  width: 50%;
+  background-color: #fff;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+#nav_bar div {
+  height: 3em;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+#nav_bar a {
+  text-decoration: none;
+  color: #000;
+  align-self: center;
+  margin-left: 1em;
+}
+#nav_bar img {
+  height: 1em;
+  width: auto;
+  align-self: center;
+}
+#nav_bar :hover {
+  background-color: #c9c6c6;
+}
+
+#nav_bar.pop_out {
+  left: -50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

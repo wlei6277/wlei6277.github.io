@@ -13,18 +13,18 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 h1 {
     color: $main_font_color;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 h2 {
     color: #fff;
     font-weight: normal;
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0 $align_margin;
     padding: 0.3em 0;
 }
@@ -43,6 +43,7 @@ p {
 section div {
     margin: auto $align_margin;
 }
+
 
 .about {
     
@@ -89,16 +90,16 @@ section div {
     }
 }
 
-div .nav_wrapper{
-    height: 100%;
-}
+// div .nav_wrapper{
+//     height: 100%;
+// }
 
 img .hero_img {
     height: 50%;
 }
 
 
-#nav_bar {
+#top_section {
     height: $nav_height;
     display: flex;
     text-align: center;
@@ -113,12 +114,14 @@ img .hero_img {
         width: 40px;
         height: 40px;
         align-self: center;
+        // filter: $main_font_color;
     }
     
     div {
         flex-grow: 100;
         align-self: center;
         justify-content: center;
+        display: block;
         h1 {
             margin: 0px 10px;
         }
@@ -189,4 +192,47 @@ img .hero_img {
     .contact_template {
         @include contact_template;
     }
+}
+
+#nav_bar {
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    box-shadow: $card_shadow;
+
+
+    div {
+        height: 3em;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        align-self: center;
+        margin-left: 1em;
+    }
+
+    img {
+        height: 1em;
+        width:auto;
+        align-self: center;
+    }
+
+    :hover {
+        background-color:rgb(201, 198, 198);
+    }
+}
+
+
+
+#nav_bar.pop_out {
+    left: -50%
 }
