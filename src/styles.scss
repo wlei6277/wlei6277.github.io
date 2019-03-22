@@ -3,7 +3,7 @@
 @import "mixins";
 
 main {
-    background-image: url("../photos/bg.png");
+    background-image: url("assets/bg.png");
 }
 
 body {
@@ -171,6 +171,16 @@ img .hero_img {
     }
 }
 
+.favourites {
+    .h2_wrapper {
+        @include h2_wrapper;
+    }
+
+    .table_card {
+        @include table_template;
+    }
+}
+
 .contact {
     .h2_wrapper {
         @include h2_wrapper;
@@ -179,6 +189,4 @@ img .hero_img {
     .contact_template {
         @include contact_template;
     }
-
-
 }
