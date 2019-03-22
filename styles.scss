@@ -13,7 +13,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    max-width:100%;
 }
 
 h1 {
@@ -40,10 +40,19 @@ p {
     font-size: 1.5em;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+}
 section div {
     margin: auto $align_margin;
+    display: flex;
+    flex-direction: column;
 }
 
+#hero_img {
+    width: 100%;
+}
 
 .about {
     
@@ -121,7 +130,7 @@ img .hero_img {
         flex-grow: 100;
         align-self: center;
         justify-content: center;
-        display: block;
+        // display: block;
         h1 {
             margin: 0px 10px;
         }
@@ -235,4 +244,23 @@ img .hero_img {
 
 #nav_bar.pop_out {
     left: -50%
+}
+
+@media only screen and (min-width: 700px) {
+    
+    h1 {
+        font-size: 25px;
+    }
+
+    #nav_bar {
+        width: 30%;
+        font-size: 40px;
+    }
+    #nav_bar.pop_out {
+        left: -30%;
+    }
+
+    
+    
+
 }
