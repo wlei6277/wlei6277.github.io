@@ -84,21 +84,22 @@ Design Documentation
     Describe key events in the development of the internet from the 1980s to today
 </h3>
  <p>
-    1980 -1994: protocols for computers to exchange information are launched on wide scale(e.g. Simple Mail Transfer Protocol). The Bulletin Boards system also became popular when prices for modems became low enough for average people to afford them.  Up until this point however computer information exchange was mostly within government and academic institutions.
+    1980 -1994: protocols for computers to exchange information are launched on a wide scale(e.g. Simple Mail Transfer Protocol). The Bulletin Boards system also became popular when prices for modems became low enough for average people to afford them.  Up until this point however computer information exchange was mostly within government and academic institutions.
 </p>
 <p>
     1994 - 2000:  In 1994 the internet goes live and the mosaic web browser is launched along with web pages. As the popularity of the internet explodes so does the commercial ecosystem around it - browsers such as Microsoft's Internet Explorer and Mozilla Firefox are born. The potential applications for the internet expand fueling investment and the dot-com bubble.
 </p>
 <p>
-    2000-2019: The dot-com crash occurs and the internet is reborn with web 2.0. Social Networking begins to rise in popularity. The web is now a foundation for society to connect and share information.  
+    2000-2019: The dot-com crash occurs and the internet is reborn with web 2.0. Social Networking begins to rise in popularity. The internet is now the predominant means of connecting within social networks and exchanging information.  
 </p>
 <h3>
     Define and describe the relationship between fundamental aspects of the internet
 </h3>
+
 <img src="docs/clients.png"/>
 <ul>
-    <li>Clients: are web users connected internet devices</li>
-	<li>Browsers: allow clients to access the internet by retrieving resources from web servers and displaying them on the users device.</li>
+    <li>Clients: are web users connected to the internet through devices</li>
+	<li>Browsers: software allowing clients to access the internet by retrieving resources from web servers and displaying them on the users device.</li>
 	<li>Servers: are computers which store data, webpages or applicatons</li>
 	<li>Internet: is the infrastructure which facilitates the exchange of information between computers. Physically this cabling or satelite signals in which data is transferred between computers in a network.</li>
 	<li>TCP/IP: are protocols which define how data should travel across the internet</li>
@@ -109,6 +110,7 @@ Design Documentation
 </h3>
 <p>
     Web mapping services: although web mapping applications have been around since 1989 they didn't become fully mainstream until the successful launch of Google Maps. Web mapping services have totally transformed how we navigate the physical world and geographies across the globe. Using traditional navigation media (e.g. paper map) a user can only see a pre-defined route or location. Providing the user with a live update of their location enables far greater flexibility in use of the map and usefullness in navigating to a desired location.</p>
+
 
  <p>
    Key benefits of web mapping services include:         
