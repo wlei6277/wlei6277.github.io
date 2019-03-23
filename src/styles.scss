@@ -201,6 +201,12 @@ img .hero_img {
     .contact_template {
         @include contact_template;
     }
+    .details { 
+        @include education_template;
+        span {
+            font-weight: bold;
+        }
+    }
 }
 
 #nav_bar {
