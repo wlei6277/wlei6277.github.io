@@ -497,6 +497,44 @@ img .hero_img {
   display: block;
   margin: 1em 0;
 }
+.contact .details {
+  background-color: #fff;
+  margin: 15px 6%;
+  border: 1px solid #c9c6c6;
+  padding: 1.6em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.contact .details .card_title {
+  margin: 0;
+}
+.contact .details .card_title a {
+  text-decoration: none;
+  color: #008073;
+  font-size: 2em;
+}
+.contact .details .card_title p {
+  color: #795548;
+  margin-top: 0.3em;
+}
+.contact .details .card_body {
+  margin: 0;
+}
+.contact .details .card_body ul {
+  padding-inline-start: 2em;
+  font-size: 1.5em;
+}
+.contact .details .card_body li {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  text-decoration: none;
+}
+.contact .details .card_body a {
+  text-decoration: none;
+  color: #000;
+}
+.contact .details span {
+  font-weight: bold;
+}
 
 #nav_bar {
   height: 100%;
