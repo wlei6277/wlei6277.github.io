@@ -64,13 +64,16 @@ section div {
 }
 .about .strengths {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1em;
-  margin: 20px 6%;
+  margin: 1em 6%;
+}
+.about .strengths div {
+  margin: 0;
 }
 .about .strengths img {
-  height: 2.5em;
+  height: 2.3em;
   width: auto;
   margin: 0 auto;
   display: block;
@@ -80,6 +83,9 @@ section div {
   font-weight: bold;
   text-align: center;
   margin: 1em 0 0 0;
+}
+.about .strengths .bottom {
+  margin: 0.2em 0;
 }
 
 .projects .h2_wrapper {

@@ -1,19 +1,19 @@
 @mixin logo_container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1em;
-    margin: $div_section_top_margin $align_margin;
+    margin: 1em $align_margin;
     
     // flex-wrap: wrap;
-
     div {
         // height: 5em;
         // width: auto;
+        margin:0;
     }
 
     img {
-        height: 2.5em;
+        height: 2.3em;
         width: auto;
         margin: 0 auto;
         display: block;
@@ -24,6 +24,10 @@
         font-weight: bold;
         text-align: center;
         margin: 1em 0 0 0;
+        
+    }
+    .bottom {
+        margin: 0.2em 0;
     }
 
 
