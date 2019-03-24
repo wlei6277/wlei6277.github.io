@@ -20,6 +20,7 @@
     </h3>
     <ul>
         <li>Linked navigation bar which comes on to the screen when the user clicks on the 'hamburger' menu in the top left of the screen </li>
+        <li>Responsive navigation bar is permenantly on screen when screen width is greater than 900px</li>
         <li>Links to web development projects (found in the 'Projects' section</li>
         <li>Links to previous employers (found in the 'Experience' section)</li>
         <li>Links to education providors (found in the 'Education' section)</li>
