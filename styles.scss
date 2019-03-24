@@ -195,10 +195,11 @@ img .hero_img {
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
     .h2_wrapper {
         @include h2_wrapper;
-    }
-    
+    }    
     .contact_template {
         @include contact_template;
     }

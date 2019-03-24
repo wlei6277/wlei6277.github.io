@@ -470,6 +470,10 @@ img .hero_img {
   padding: 1em;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+}
 .contact .h2_wrapper {
   margin: 0;
   background-color: #008073;
