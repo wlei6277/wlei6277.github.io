@@ -266,3 +266,46 @@
 
 
 }
+
+@mixin screen_increase {
+    h1 {
+        font-size: 25px;
+    }
+
+    #nav_bar {
+        width: 30%;
+        font-size: 40px;
+    }
+    #nav_bar.pop_out {
+        left: -30%;
+    }
+
+    .about {
+        .strengths {
+            img {
+                height: 3em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .experience {
+        .card_title {
+            img {
+                width: 20%;
+            }
+        }
+    }
+
+    .favourites{
+        th {
+            font-size: 1.5em;
+        }
+
+        td {
+            font-size: 1.5em;
+        }
+    }
+}
