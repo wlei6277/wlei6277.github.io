@@ -127,7 +127,8 @@ img .hero_img {
     }
     
     div {
-        flex-grow: 100;
+        width: 100%;
+        flex-grow: 0;
         align-self: center;
         justify-content: center;
         // display: block;
@@ -253,7 +254,7 @@ img .hero_img {
 }
 
 @media only screen and (min-width: 700px) {
-    
+
     h1 {
         font-size: 25px;
     }
@@ -293,6 +294,59 @@ img .hero_img {
         td {
             font-size: 1.5em;
         }
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    @include screen_increase;
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top_section {
+        flex-direction: column;
+        width: 20%;
+        height: 100%;
+
+        #nav_bar {
+            position: static;
+            font-size: 2em;
+            box-shadow: none;
+            order: 2;
+            flex-grow: 2;
+            width: 100%;
+            height: auto;
+            justify-content: flex-start;
+            img {
+                margin-left: 0.5em;
+            }
+        }
+        #hamburger {
+            display: none;
+        }
+        .title {
+            order: 1;
+            flex-grow: 0;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            
+            h1 {
+                font-size: 3em;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+    }
+    main {
+        width: 80%;
+        align-self: flex-end;
+    }
+    #hero_img {
+        padding: 0;
     }
 
 }

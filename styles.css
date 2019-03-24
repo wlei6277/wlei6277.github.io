@@ -214,7 +214,8 @@ img .hero_img {
   align-self: center;
 }
 #top_section div {
-  flex-grow: 100;
+  width: 100%;
+  flex-grow: 0;
   align-self: center;
   justify-content: center;
 }
@@ -608,6 +609,87 @@ img .hero_img {
   }
   .favourites td {
     font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  #nav_bar {
+    width: 30%;
+    font-size: 40px;
+  }
+
+  #nav_bar.pop_out {
+    left: -30%;
+  }
+
+  .about .strengths img {
+    height: 3em;
+  }
+  .about .strengths p {
+    font-size: 1em;
+  }
+
+  .experience .card_title img {
+    width: 20%;
+  }
+
+  .favourites th {
+    font-size: 1.5em;
+  }
+  .favourites td {
+    font-size: 1.5em;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #top_section {
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+  }
+  #top_section #nav_bar {
+    position: static;
+    font-size: 2em;
+    box-shadow: none;
+    order: 2;
+    flex-grow: 2;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+  }
+  #top_section #nav_bar img {
+    margin-left: 0.5em;
+  }
+  #top_section #hamburger {
+    display: none;
+  }
+  #top_section .title {
+    order: 1;
+    flex-grow: 0;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  #top_section .title h1 {
+    font-size: 3em;
+  }
+  #top_section .title h3 {
+    font-size: 1.5em;
+  }
+
+  main {
+    width: 80%;
+    align-self: flex-end;
+  }
+
+  #hero_img {
+    padding: 0;
   }
 }
 
