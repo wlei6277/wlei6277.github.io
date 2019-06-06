@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Billy Leitch | Full Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    
+    </head>
+<body>
+    <header id="top_section" role="Navigation bar">
+        <nav id="nav_bar" class="pop_out"> 
+            <div onclick="navBar()">
+                <image src="assets/me.png" alt="Icon depicting a person" />
+                <a href="#about" aria-label="Navigate to the about me section">About</a>
+            </div>
+            <div onclick="navBar()">
+                <image src="assets/projects.png" alt="Icon depicting a project"/>
+                <a href="#projects" aria-label="Navigate to the projects section">Projects</a>
+            </div>
+            <div onclick="navBar()">
+                <image src="assets/skills.png" alt="Icon depicting tools"/>
+                <a href="#skills" aria-label="Navigate to skills section">Skills</a>
+            </div>
+            <div onclick="navBar()">
+                <image src="assets/experience.png" alt="Icon depicting a worker" />
+                <a href="#experience" aria-label="Navigate to the experience section">Experience</a>
+            </div>
+            <div onclick="navBar()">
+                <image src="assets/education.png" alt="Icon depicting college graduation hat" />
+                <a href="#education" aria-label="Navigate to the education section">Education</a>
+            </div>
+            <div onclick="navBar()">
+                <image src="assets/favourites.png" alt="Icon depicting a person hiking" />
+                <a href="#favourites" aria-label="Navigate to the favourites section">Favourites</a>
+            </div>
+            <div onclick="navBar()">
+                <image src="assets/contact.png" alt="Icon depicting a contact card" />
+                <a href="#contact" aria-label="Navigate to the contact section">Contact</a>
+            </div>
+        </nav>
+        <img src="assets/menu.png" alt="Main menu bar" onclick="navBar()" id="hamburger" aria-label="Open navigation menu"/>
+        <div class="title">
+            <h1>Billy Leitch</h1>
+            <h3>Full Stack Developer</h3>
+        </div>
+    </header>
+    <main>
+        <img src="assets/Ymir1.jpg" alt="Picture of Billy standing in the snow" id="hero_img"/>
+        <section role="About me section" class="about" id="about">
+            <div class="h2_wrapper">
+                <h2>ABOUT</h2>
+            </div>
+            <h3>Who I am</h3>
+            <div role="Mission statement" class="mission">
+                <p>
+                    Developer, entrepreneur and nature enthusiast. 
+                </p>
+                <p>
+                    With roots in e-commerce and Management Consulting, I have a strong passion for innovation and technology.
+                </p>
+                <p>
+                    I find problem solving fun, especially in a collobrative environment where I can work with others to tackle big complex issues. I navigate ambiguity by breaking problems down into manageable sub-components and working through these methodically with my team to get the job done.  
+                </p>
+                <p>
+                    My dream is to develop technologies which advance human prosperity whilst also preserving the complexity and beauty of the natural environment around us.
+                </p>
+                
+            </div>
+            <h3>My key strengths</h3>
+            <div role="Each of my key strengths" class="strengths">
+            
+                <div>
+                    <img src="assets/problem_solving.png" alt="Person thinking icon"/>
+                    <p>Problem</p>
+                    <p  class="bottom">Solving</p>
+                </div>
+                <div>
+                    <img src="assets/communication.png" alt="Team communication icon" />
+                    <p>Structured</p>
+                    <p class="bottom">Communications</p>
+                </div>
+                <div>
+                    <img src="assets/client_engagement.png" alt="Client meeting icon" />
+                    <p>Client</p>
+                    <p class="bottom">Engagement</p>
+                </div>
+                <div>
+                    <img src="assets/project_management.png" alt="Project checklist icon" />
+                    <p>Project</p>
+                    <p class="bottom">Management</p>
+                </div>
+                
+            </div>
+        </section>
+        <section role="Project overview" class="projects" id="projects">
+            <div class="h2_wrapper">
+                <h2>PROJECTS</h2>
+            </div>
+            <div role="Terminal app overview" class="project_template">
+                <a href="https://github.com/wlei6277/terminal_app" aria-label="Link to the location on Github where the Rescue Cats repo is stored">
+                    <img src="assets/kitten-1285341_1920.jpg" alt="Picture of someone rescuing two cats" />
+                </a>
+                <div>
+                    <h3>Rescue Cat Matcher</h3>
+                    <p>
+                        A Ruby terminal app to match rescue cats across different shelters in NSW to members of the public who want to adopt a cat.
+                    </p>
+                    <p>
+                        The app gathers information from the user and ensures that cats are matched to suitable owners based on a set of mandatory criteria.
+                    </p>
+                    <p>
+                        The user is allowed to choose a cat from a range of cats which have been matched to their criteria.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section role="Overview of skills" class="skills" id="skills">
+            <div class="h2_wrapper">
+                <h2>SKILLS</h2>
+            </div>
+            <div role="Programming skills" class="technology_skills">
+                <div class="card_title">
+                    <h3>Tech</h3>
+                </div>
+                <div class="card_body">
+                    <div class="skill_logo">
+                        <img src="assets/ruby.png" alt="Ruby logo" />
+                        <p>Ruby</p>
+                    </div>
+                    <div class="skill_logo">
+                        <img src="assets/HTML5.png" alt="Html 5 logo" />
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill_logo">
+                        <img src="assets/css3.png" alt="CSS 3 logo" />    
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill_logo">
+                        <img src="assets/python.png" alt="Python logo" />
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+            <div role="Collaboration" class="colloboration_skills">
+                <div class="card_title">
+                    <h3>Collaboration</h3>
+                </div>
+                <div class="card_body">
+                    <div class="skill_logo">
+                        <img src="assets/GitHub_Logo.png" alt="Github logo" />
+                        <p>Github</p>
+                    </div>
+                    <div class="skill_logo">
+                        <img src="assets/Slack RGB.png" alt="Slack logo"  />
+                        <p>Slack</p>
+                    </div>
+                    <div class="skill_logo">
+                        <img src="assets/balsamiq.png" alt="Balsamiq logo" />
+                        <p>Balsamiq</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section role="Overview of career experience" class="experience" id="experience">
+            <div class="h2_wrapper">
+                <h2>EXPERIENCE</h2>
+            </div>
+            <div role="Overview of my e-commerce business" class="TLU">    
+                <div class="card_title">
+                    <a href="http://www.thelastunicorn.shop" aria-label="Navigate to my ecommerce site" target="_blank">
+                        <img src="assets/TLU.png" alt="The Last Unicorn logo" />
+                    </a>
+                </div>
+                <div class="card_body">
+                    <h3>Co-Founder</h3>
+                    <p>
+                        The Last Unicorn is a jewellery, apparel and beauty eCommerce store which my partner and I co-founded in June 2018. 
+                    </p>
+                    <p>
+                        Currently we are a niche business focused on delivering value to a highly targeted customer segment. We are growing rapidly however and are exploring development of in-house product design and manufacturing capability.
+                    </p>
+                </div>
+                <div class="card_footer">
+                    <p>Jun 2019 - Present | Sydney, Australia</p>
+                </div>
+            </div>
+            <div role="Overview of my experience as a consultant" class="TH">    
+                <div class="card_title">
+                    <a href="http://www.thirdhorizon.com.au/" aria-label="Navigate to Third Horizon Consulting website" target="_blank">
+                        <img src="assets/TH_Logo_L-1024x130.jpg" alt="Third Horizon logo" />
+                    </a>
+                </div>
+                <div class="card_body">
+                    <h3>Senior Associate</h3>
+                    <p>
+                        Third Horizon is an Australian management consulting firm. It focuses on the implementation of large-scale change and business transformation initiatives. In managing complex programs, it works collaboratively with major organisations across a range of industries to execute their strategy and help deliver lasting results.
+                    </p>
+                    <p>
+                        My role: Support consulting teams through excellent stakeholder engagement, analytical and communication skills.
+                    </p>
+                </div>
+                <div class="card_footer">
+                    <p>Feb 2016 - Feb 2019 | Sydney, Australia</p>
+                </div>
+            </div>
+        </section>
+        <section role="Overview of my education" class="education" id="education">
+            <div class="h2_wrapper">
+                <h2>EDUCATION</h2>
+            </div>
+            <div role="Overview of coding bootcamp" class="CA">
+                <div class="card_title">
+                    <a href="https://coderacademy.edu.au/" aria-label="Navigate to Coder Academy website" target="_blank">Coder Academy</a>
+                
+                    <p>
+                        Sydney, Australia
+                    </p>
+                </div>
+                <div class="card_body">
+                    <ul>
+                        <li>Fast Track Program</li>
+                    </ul>
+                </div>
+            </div>
+            <div role="Overview of university degree" class="USYD">
+                <div class="card_title">
+                    <a href="https://sydney.edu.au/">University of Sydney</a>
+                    <p>
+                        Sydney Australia
+                    </p>
+                </div>
+                <div class="card_body">
+                    <ul>
+                        <li>B.A. Resource Economics (Honours)</li>
+                    </ul>
+                </div>
+            </div>
+            <div role="Overview of online courses" class="online">
+                <div class="card_title">
+                    <p>Online Courses</p>
+                </div>
+                <div class="card_body">
+                    <ul>
+                        <li>
+                            <a href="https://courses.edx.org/certificates/6d033c73eca140b987c78a8056c9ab81" aria-label="Navigate to course certificate" target="_blank"> MiTX: Introduction to Computer Science and Programming Using Python</a>                    
+                        </li>
+                        <li>
+                            <a href="https://courses.edx.org/certificates/805f5e9635fd40509f73b6788e6fee94" aria-label="Navigate to course certificate" target="_blank"> MiTX: Introduction to Computational Thinking and Data Science</a>                    
+                        </li>
+                        <li>
+                            <a href="https://courses.edx.org/certificates/805f5e9635fd40509f73b6788e6fee94" aria-label="Navigate to course certificate" target="_blank"> DelftX: Data Analysis: Take it to the MAX()</a>                    
+                        </li>
+                        <li>
+                            <a href="https://academy.exceedlms.com/student/award/26267290" aria-label="Navigate to course certificate" target="_blank"> Google Ads Fundamentals</a>                    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section role="A table of my favourite things" class="favourites" id="favourites">
+            <div class="h2_wrapper">
+                <h2>MY FAVOURITE THINGS</h2>
+            </div>
+            <div class="table_card">
+                <table>
+                    <tr>
+                        <th class="first">Activities</th>
+                        <th >Music</th>
+                        <th>Destinations</th>
+                    </tr>
+                    <tr>
+                        <td class="first">Surfing</td>
+                        <td>Fbi Radio</td>
+                        <td>Yosemite, US</td>
+                    <tr>
+                    </tr>
+                        <td class="first">Skiing</td>
+                        <td>House</td>
+                        <td>Gland, Indonesia</td>
+                    </tr>
+                    </tr class="bottom">
+                        <td class="first">Hiking</td>
+                        <td>Jazz</td>
+                        <td>Jindabyne, NSW</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer role="Links to related resources (e.g. Github account)" class="contact" id="contact">
+            <div class="h2_wrapper">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="details">
+                <p>
+                        <span>Moblie | </span>+61 419 208 400
+                </p>
+                <p>
+                        <span>Email |</span> wlei6277@gmail.com
+                </p>
+            </div>
+            <div class="contact_template">
+                <div class="Email">
+                    <img src="assets/email.png" alt="Email icon" />
+                    <a href="mailto: wlei6277@gmail.com" aria-label="Open email client with my address" target="_blank">Email</a>
+                </div>
+                <div class="Git">
+                    <img src="assets/GitHub_Logo.png" alt="Github logo" />
+                    <a href="https://github.com/wlei6277" aria-label="Navigate to my Github account" target="_blank">Github</a>
+                </div>
+                <div clas="medium">
+                    <img src="assets/Medium.png" alt="Medium logo" />
+                    <a href="https://medium.com/@wlei6277" aria-label="Navigate to my Medium page" target="_blank">Blog</a>
+                </div>
+                <div class="Linkedin">
+                    <img src="assets/Linkedin.png" alt="Linkedin logo" />
+                    <a href="https://www.linkedin.com/in/billy-leitch-35426099/" aria-label="Navigate to Linkedin account" target="_blank">Linkedin</a>
+                </div>
+                <div class="Twitter">
+                    <img src="assets/Twitter_Logo_Blue.png" alt="Twitter logo">
+                    <a href="https://twitter.com/leitch_billy" aria-label="Navigate to Twitter account" target="_blank">Twitter</a>
+                </div>
+                <div class="resume">
+                    <img src="assets/resume_icon.png" alt="Icon of resume"/>
+                    <a href="../docs/CV Portfolio Website 20.02.2019.docx" aria-label="Open Resume" target="_blank">Resume</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script>
+        function navBar() {
+            console.log("hi")
+            let nav = document.getElementById("nav_bar");
+            nav.classList.toggle("pop_out");
+        }
+    </script>
+</body>
+</html>
