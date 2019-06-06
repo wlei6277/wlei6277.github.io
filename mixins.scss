@@ -1,0 +1,311 @@
+@mixin logo_container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    margin: 1em $align_margin;
+    
+    // flex-wrap: wrap;
+    div {
+        // height: 5em;
+        // width: auto;
+        margin:0;
+    }
+
+    img {
+        height: 2.3em;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    p {
+        font-size: 0.6em;
+        font-weight: bold;
+        text-align: center;
+        margin: 1em 0 0 0;
+        
+    }
+    .bottom {
+        margin: 0.2em 0;
+    }
+
+
+}
+
+@mixin project_template {
+    background-color: $card_color;
+    border: $card_border;
+    margin: $card_margin;
+    box-shadow: $card_shadow;
+
+   img {
+    width: 100%;
+   } 
+
+   div {
+       margin: 0;
+       padding: $card_padding;
+   }
+
+   h3 {
+       margin: 0;
+       padding: 0.2em 0;
+   }
+}
+
+@mixin h2_wrapper {
+    margin: $full_block_margin;
+    background-color: $main_font_color;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin skills_template {
+    display: flex;
+    flex-direction: column;
+    padding: $card_padding;
+    flex-grow: 1;
+    background-color: $card_color;
+    margin: $card_margin;
+    border: $card_border;
+    box-shadow: $card_shadow;
+    
+    
+    h3 {
+        font-size: 2.5em;
+        border-bottom: $card_border;
+        margin: 1em 0;
+        padding-bottom: 0.3em;
+    }
+    .card_title {
+        margin: 0;
+    }
+
+    .card_body {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+        p {
+            font-size: 1.1em;
+        }
+
+        img {
+            height: 4em;
+            
+        }
+        
+        div .skill_logo {
+            height: 4em;
+        }
+    }
+}
+
+@mixin experience_template {
+    background-color: $card_color;
+    margin: $card_margin;
+    border: $card_border;
+    padding: $card_padding;
+    box-shadow: $card_shadow;
+    display: flex;
+    flex-direction: column;
+
+    .card_title {
+        display: flex;
+        border-bottom: $card_border;
+        
+        margin: 1em 0;
+        padding-bottom: 0.3em;
+        a {
+            font-size: 2em;
+            color: $main_font_color;
+        }
+        img {
+            // height: 1.4em;
+            max-width: 100%;
+        }
+    }
+
+    .card_body {
+        margin: 0;
+        h3 {
+            color: $sub_color;
+            font-size: 1.8em;
+            margin: auto 0;
+        }
+    }
+    
+    
+    .card_footer {
+        margin: 0;
+        color: rgb(156, 153, 153);
+        p {
+            margin-bottom: 0;
+            color: lighten($sub_color, 20%)
+        }
+        
+    }
+}
+
+@mixin education_template {
+    background-color: $card_color;
+    margin: $card_margin;
+    border: $card_border;
+    padding: $card_padding;
+    box-shadow: $card_shadow;
+
+    .card_title {
+        margin: 0;
+        a {
+            text-decoration: none;
+            color: $main_font_color;
+            font-size: 2em;
+        }
+
+        p {
+            color: $sub_color;
+            margin-top: 0.3em;
+        }
+    }
+    .card_body {
+        margin: 0;
+        ul {
+            padding-inline-start: 2em;
+            font-size: 1.5em;
+            
+        }
+
+        li {
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+@mixin contact_template {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 0;
+    background-color: $card_color;
+    margin: $card_margin;
+    border: $card_border;
+    padding: $card_padding;
+    box-shadow: $card_shadow;
+    text-align: center;
+    flex-wrap: wrap;
+
+    div {
+        margin: 0.3em $align_margin;
+    }
+
+    img {
+        height: $skill_logo_height;
+        width: auto;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #000;
+        display: block;
+        margin: 1em 0;
+    }
+}
+
+@mixin table_template {
+    
+    font-size: 1.3em;
+    background-color: $card_color;
+    margin: $card_margin;
+    border: $card_border;
+    box-shadow: $card_shadow;
+    text-align: center;
+
+    table {
+        
+        width: 100%;
+        table-layout: fixed; 
+        border-collapse: collapse;
+    }
+
+    th {
+        height: 3em;
+        background-color: $main_font_color;
+        color: #fff;
+        border-left: 1px solid #fff;
+       
+        .first {
+            color: #000;
+            border-left: none;
+        }
+    }
+
+    .first {
+        border-left: none;
+    }
+
+    td {
+        font-size: 0.9em;
+        border: 1px solid rgb(201, 198, 198);
+        padding: 1em;
+        
+    }
+
+
+}
+
+@mixin screen_increase {
+    h1 {
+        font-size: 25px;
+    }
+
+    #nav_bar {
+        width: 30%;
+        font-size: 40px;
+    }
+    #nav_bar.pop_out {
+        left: -30%;
+    }
+
+    .about {
+        .strengths {
+            img {
+                height: 3em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .experience {
+        .card_title {
+            img {
+                width: 20%;
+            }
+        }
+    }
+
+    .favourites{
+        th {
+            font-size: 1.5em;
+        }
+
+        td {
+            font-size: 1.5em;
+        }
+    }
+}

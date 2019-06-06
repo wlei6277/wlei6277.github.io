@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "variables";
+@import "mixins";
+
+main {
+    background-image: url("assets/bg.png");
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: $parent_font_size;
+    margin: $standard_margin;
+}
+
+img {
+    max-width:100%;
+}
+
+h1 {
+    color: $main_font_color;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 2em;
+    margin: 0 $align_margin;
+    padding: 0.3em 0;
+}
+
+h3 {
+    color: $main_font_color;
+    font-size: 2em;
+    margin: 0.3em $align_margin;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+section div {
+    margin: auto $align_margin;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero_img {
+    width: 100%;
+}
+
+.about {
+    
+    .h2_wrapper {
+        margin: $full_block_margin;
+        background-color: $main_font_color;
+    }
+
+    h3 {
+        color: $sub_color;
+    }
+
+    .mission {
+        margin: 0 $align_margin;
+        
+    }
+    
+    .strengths {
+        @include logo_container();
+    }
+}
+
+.projects  {
+
+    .h2_wrapper {
+        margin: $full_block_margin;
+        background-color: $main_font_color;
+    }
+
+    .project_template {
+        @include project_template;
+    }
+}
+
+.skills {
+    .h2_wrapper{
+        @include h2_wrapper;
+    }
+    .technology_skills {
+        @include skills_template;
+    }
+    .colloboration_skills {
+        @include skills_template;
+    }
+}
+
+// div .nav_wrapper{
+//     height: 100%;
+// }
+
+img .hero_img {
+    height: 50%;
+}
+
+
+#top_section {
+    height: $nav_height;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    border-bottom: $card_border;
+    box-shadow: $card_shadow;
+
+    img {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        align-self: center;
+        // filter: $main_font_color;
+    }
+    
+    div {
+        width: 100%;
+        flex-grow: 0;
+        align-self: center;
+        justify-content: center;
+        // display: block;
+        h1 {
+            margin: 0px 10px;
+        }
+        h3 {
+            align-items: flex-start;
+            margin: 0px 10px;
+            font-size: 1em;
+            color: $sub_color;
+        }
+    }
+}
+
+#hero_img {
+    padding-top: $nav_height;
+}
+
+.experience {
+    .h2_wrapper {
+        @include h2_wrapper;
+    }
+    
+    .TLU {
+        @include experience_template;
+    }
+
+    .TH {
+        @include experience_template;
+    }
+}
+
+.education {
+    .h2_wrapper {
+        @include h2_wrapper;
+    }
+    
+    .CA {
+        @include education_template;
+    }
+
+    .USYD {
+        @include education_template;
+    }
+
+    .online {
+        @include education_template;
+        .card_title p {
+            color: $main_font_color;
+            font-size: 2em;
+        }
+    }
+}
+
+.favourites {
+    .h2_wrapper {
+        @include h2_wrapper;
+    }
+
+    .table_card {
+        @include table_template;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    .h2_wrapper {
+        @include h2_wrapper;
+    }    
+    .contact_template {
+        @include contact_template;
+    }
+    .details { 
+        @include education_template;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+#nav_bar {
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    box-shadow: $card_shadow;
+
+
+    div {
+        height: 3em;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        align-self: center;
+        margin-left: 1em;
+    }
+
+    img {
+        height: 1em;
+        width:auto;
+        align-self: center;
+    }
+
+    :hover {
+        background-color:rgb(201, 198, 198);
+    }
+}
+
+
+
+#nav_bar.pop_out {
+    left: -50%
+}
+
+@media only screen and (min-width: 700px) {
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #nav_bar {
+        width: 30%;
+        font-size: 40px;
+    }
+    #nav_bar.pop_out {
+        left: -30%;
+    }
+
+    .about {
+        .strengths {
+            img {
+                height: 3em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .experience {
+        .card_title {
+            img {
+                width: 20%;
+            }
+        }
+    }
+
+    .favourites{
+        th {
+            font-size: 1.5em;
+        }
+
+        td {
+            font-size: 1.5em;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    @include screen_increase;
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top_section {
+        flex-direction: column;
+        width: 20%;
+        height: 100%;
+
+        #nav_bar {
+            position: static;
+            font-size: 2em;
+            box-shadow: none;
+            order: 2;
+            flex-grow: 2;
+            width: 100%;
+            height: auto;
+            justify-content: flex-start;
+            img {
+                margin-left: 0.5em;
+            }
+        }
+        #hamburger {
+            display: none;
+        }
+        .title {
+            order: 1;
+            flex-grow: 0;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            
+            h1 {
+                font-size: 3em;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+    }
+    main {
+        width: 80%;
+        align-self: flex-end;
+    }
+    #hero_img {
+        padding: 0;
+    }
+
+}
